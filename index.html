@@ -9,54 +9,60 @@
 	<title>Animation timeline using GSAP</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-	
+
 	<style>
-        *, html {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            display: flex;
-            
-        }
-        
-    </style>
-    </head>
-    <body>
-    <div class="controlButton">
-        <button id="start">Start</button>
-        <button id="pause">Pause</button>
-        <button id="stop">Stop</button>
-        <button id="reverse">Reverse</button>
-        
-    </div>
-    <div class="content-holder">
-        <div class="tools">
-            <img id="toolBox" src="1.jpg">
-            <img id="weightLifer" src="2.jpg">
-            <img id="crazy" src="3.jpg">
-            <img id="leaf" src="4.jpg">
-        </div>
-        <div class="title">
-            JavaScript Animation Using
-        </div>
-        <div class="gsapTitle">
-            <div class="superman">
-                <img src="Hawking.png">
-                <div class="mainTitle">
-                    <p><span class="asapReg">Green</span>
-                    <span class="greenText">Sock</span></p>
-                    <p><span class="greenText">Animation Platform</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-        <script src="jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TimelineLite.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/easing/EasePack.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
-        <script src="app.js"></script>             
-    </body>
+		*,
+		html {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			display: flex;
+			background-color: #000000;
+			height: 100%;
+			transform-style: preserve-3d;
+			color: #ffffff;
+			font-family: ASAP;
+			overflow: hidden;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="controlButton">
+		<button id="start">Start</button>
+		<button id="pause">Pause</button>
+		<button id="stop">Stop</button>
+		<button id="reverse">Reverse</button>
+
+	</div>
+	<div class="content-holder">
+		<div class="tools">
+			<img id="toolBox" src="1.jpg">
+			<img id="weightLifer" src="2.jpg">
+			<img id="crazy" src="3.jpg">
+			<img id="leaf" src="4.jpg">
+		</div>
+		<div class="title">
+			JavaScript Animation Using
+		</div>
+		<div class="gsapTitle">
+			<div class="superman">
+				<img src="Hawking.png">
+				<div class="mainTitle">
+					<p><span class="asapReg">Green</span>
+						<span class="greenText">Sock</span></p>
+					<p><span class="greenText">Animation Platform</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
 </html>
